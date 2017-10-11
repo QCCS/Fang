@@ -27,7 +27,7 @@ export default class Header extends Component {
         <span>选择区域</span>
         <select value={this.state.value} onChange={this.changeDistrict}>
           {this.props.districtList.map(district => (
-            <option key={district} value={district}>{district}</option>
+             <option key={district} value={district}>{district}</option>
           ))}
         </select>
         <button onClick={this.search}>查询</button>
@@ -40,4 +40,3 @@ Header.propTypes = {
   districtList: PropTypes.array,
   onSearchDistrict: PropTypes.func,
 };
-

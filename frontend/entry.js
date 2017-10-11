@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import {
-	render
-} from 'react-dom'
-import {
-	Router,
-	Route,
-	hashHistory
-} from 'react-router'
-import Main from './containers/Main'
+	render,
+} from 'react-dom';
+// import {
+// 	Router,
+// 	Route,
+// 	hashHistory
+// } from 'react-router';
+import Main from './containers/Main';
 
-render(<Main/>, document.getElementById('app'))
+render(<Main />, document.getElementById('app'));

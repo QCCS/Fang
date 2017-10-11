@@ -12,9 +12,13 @@
 
 ## 安装及运行
 
-1. 环境准备：Node.js、MongoDB、Python(可选)。
+1. 环境准备：Node.js>5.0、MongoDB、Python(可选)>=2.7。
+MongoDB安装之后启动mongodb，创建一个数据库map
+如果用python抓取数据
+pip install pymongo
 2. 进入项目根路径。
-3. 执行 npm run build 安装项目依赖。 
+3. 执行 npm i 安装项目依赖。
+3. 执行 npm run build 打包
 4. 执行 npm run dev ， 启动项目。
 5. 浏览器访问http://localhost:8080
 6. 此时网页中是没有小区数据的，需要通过爬虫抓取小区房价信息。

@@ -9,13 +9,13 @@ import fs from 'fs';
 import mongoose from 'mongoose';
 import api from './api';
 
+const webpackDevConfig = require('../configs/webpack.client.koa-watch');
+
 function startWebServer(port) {
   const app = koa();
 
   if (process.env.NODE_ENV === 'development') {
     app.use(serve(path.join(__dirname, '../frontend')));
-
-    const webpackDevConfig = require('../configs/webpack.client.koa-watch');
     const compiler = webpack(webpackDevConfig);
     app.use(
       webpackMiddleware(compiler, {
