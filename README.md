@@ -31,6 +31,11 @@ pip install pymongo
 ## 声明
 
 爬虫抓取的数据来源于链家网，仅作为学习使用。
+部署到https://www.ngrok.cc请求免费地址
+下载ngrok
+
+./sunny clientid bb9ee0aa5475fffc
+
 
 参考项目: https://github.com/vvsuperman/fkEstate 。
 
